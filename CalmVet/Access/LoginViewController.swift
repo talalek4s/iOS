@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
     }
     */
   @IBAction func goToRegisterView(_ sender: MDCButton) {
-    performSegue(withIdentifier: “BruceTheHoon”, sender: self)
+    
   }
   
 }
