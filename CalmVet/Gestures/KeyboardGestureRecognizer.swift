@@ -14,7 +14,6 @@ class KeyboardGestureRecognizer: UITapGestureRecognizer {
     notification: Notification,
     scrollView: UIScrollView
   ) -> CGFloat {
-    print ("el teclado aparece")
     if isKeyboardEnabled { return scrollView.contentSize.height }
     isKeyboardEnabled = true;
     
@@ -32,7 +31,6 @@ class KeyboardGestureRecognizer: UITapGestureRecognizer {
     notification: Notification,
     scrollView: UIScrollView
   ) -> CGFloat {
-    print ("el teclado se fue")
     if !isKeyboardEnabled { return scrollView.contentSize.height }
     isKeyboardEnabled = false;
     
