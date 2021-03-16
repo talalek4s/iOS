@@ -221,6 +221,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="navigateToRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ycs-NX-krH"/>
+                                                    <segue destination="KiI-uz-Gtc" kind="show" identifier="registerUser" id="uUQ-Zp-tto"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -253,11 +254,11 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="RQO-PA-R8T" id="Zeq-bh-k01"/>
+                        <outlet property="passwordTextField" destination="Al3-0n-CWe" id="iH7-0T-fDL"/>
                         <outlet property="registerButton" destination="T9A-AW-yQo" id="73J-Sf-9Yf"/>
                         <outlet property="scrollView" destination="fXP-sf-h4F" id="2hR-du-eei"/>
                         <outlet property="submitButton" destination="zCh-Uq-5PK" id="oeg-xn-wav"/>
-                        <outletCollection property="loginTextFields" destination="RQO-PA-R8T" collectionClass="NSMutableArray" id="aG0-hV-UgT"/>
-                        <outletCollection property="loginTextFields" destination="Al3-0n-CWe" collectionClass="NSMutableArray" id="yi0-nA-6eZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -272,7 +273,7 @@
         <!--Signup View Controller-->
         <scene sceneID="xfL-E6-bUP">
             <objects>
-                <viewController storyboardIdentifier="SignupBoard" id="KiI-uz-Gtc" customClass="SignupViewController" customModule="CalmVet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SignupBoard" storyboardIdentifier="SignupBoard" modalPresentationStyle="fullScreen" id="KiI-uz-Gtc" customClass="SignupViewController" customModule="CalmVet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cNS-bU-cfh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

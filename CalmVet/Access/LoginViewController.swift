@@ -9,22 +9,28 @@ import UIKit
 
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
-  @IBOutlet var loginTextFields: [UITextField]!
+  
+  /** Text Fields */
+  @IBOutlet weak var emailTextField: UITextField!
+  @IBOutlet weak var passwordTextField: UITextField!
+  
+  /** Buttons Element */
   @IBOutlet weak var submitButton: UIButton!
   @IBOutlet weak var registerButton: UIButton!
+  
+  /** ScrollView Element */
   @IBOutlet weak var scrollView: UIScrollView!
-
+  
   private var keyboardGestureRecognizer = KeyboardGestureRecognizer()
+  private var navigation = Navigation()
+  
+  // Create a storyBoard instace
+  private var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
   
   /** Lifecycles */
   override func viewDidLoad() {
     super.viewDidLoad()
     submitButton.layer.cornerRadius = 4;
-
-    for textField in loginTextFields {
-      textField.delegate = self
-    }
-
   }
   override func viewWillAppear(_ animated: Bool) {
     
@@ -49,7 +55,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     super.viewWillDisappear(animated)
     NotificationCenter.default.removeObserver(self)
   }
-
+  
   /** Tap Gesture Recognizer */
   @IBAction func tapOnView() {
     view.endEditing(true)
@@ -63,9 +69,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     scrollView.contentSize.height = keyboardGestureRecognizer
       .keyboardDisabled(notification: notification, scrollView: scrollView)
   }
-
+  
+  /** Navigate to Register View Controller */
   @IBAction func navigateToRegister(_ sender: UIButton) {
-    
+
+    // Create a SignUpViewController instance
+    let signUpViewController = storyBoard.instantiateViewController(withIdentifier: "SignupBoard") as! SignupViewController
+
+    // Navigate to ViewController
+    navigation.navigateToViewController( viewController: signUpViewController )
   }
   /*
    // MARK: - Navigation

@@ -19,6 +19,7 @@
 		DA538ACD25FF389D00833646 /* AnimalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA538ACC25FF389D00833646 /* AnimalsTableViewController.swift */; };
 		DA538AD82600387F00833646 /* BasicPersonDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA538AD72600387F00833646 /* BasicPersonDataViewController.swift */; };
 		DAB9AB8526004D20004FE379 /* KeyboardGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB9AB8426004D20004FE379 /* KeyboardGestureRecognizer.swift */; };
+		DAB9AB8B26010615004FE379 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB9AB8A26010615004FE379 /* Navigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		DA538ACC25FF389D00833646 /* AnimalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTableViewController.swift; sourceTree = "<group>"; };
 		DA538AD72600387F00833646 /* BasicPersonDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPersonDataViewController.swift; sourceTree = "<group>"; };
 		DAB9AB8426004D20004FE379 /* KeyboardGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardGestureRecognizer.swift; sourceTree = "<group>"; };
+		DAB9AB8A26010615004FE379 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		DA1CFDC725F78B5400D2E426 /* CalmVet */ = {
 			isa = PBXGroup;
 			children = (
+				DAB9AB89260105B6004FE379 /* Navigation */,
 				DAB9AB8326004CF6004FE379 /* Gestures */,
 				DA538ACA25FF387B00833646 /* App */,
 				DA538ABE25FF1B3300833646 /* Access */,
@@ -128,6 +131,14 @@
 				DAB9AB8426004D20004FE379 /* KeyboardGestureRecognizer.swift */,
 			);
 			path = Gestures;
+			sourceTree = "<group>";
+		};
+		DAB9AB89260105B6004FE379 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				DAB9AB8A26010615004FE379 /* Navigation.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +261,7 @@
 				DA538ACD25FF389D00833646 /* AnimalsTableViewController.swift in Sources */,
 				DA538AD82600387F00833646 /* BasicPersonDataViewController.swift in Sources */,
 				DA1CFDC925F78B5400D2E426 /* AppDelegate.swift in Sources */,
+				DAB9AB8B26010615004FE379 /* Navigation.swift in Sources */,
 				DA538AC725FF1D6000833646 /* LoginViewController.swift in Sources */,
 				DA1CFDCB25F78B5400D2E426 /* SceneDelegate.swift in Sources */,
 			);
