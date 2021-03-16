@@ -16,6 +16,9 @@
 		DA1CFDD825F78B5500D2E426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1CFDD625F78B5500D2E426 /* LaunchScreen.storyboard */; };
 		DA538ABC25FF1B2900833646 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA538ABB25FF1B2900833646 /* SignupViewController.swift */; };
 		DA538AC725FF1D6000833646 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA538AC625FF1D6000833646 /* LoginViewController.swift */; };
+		DA538ACD25FF389D00833646 /* AnimalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA538ACC25FF389D00833646 /* AnimalsTableViewController.swift */; };
+		DA538AD82600387F00833646 /* BasicPersonDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA538AD72600387F00833646 /* BasicPersonDataViewController.swift */; };
+		DAB9AB8526004D20004FE379 /* KeyboardGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB9AB8426004D20004FE379 /* KeyboardGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		DA1CFDD925F78B5500D2E426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA538ABB25FF1B2900833646 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		DA538AC625FF1D6000833646 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DA538ACC25FF389D00833646 /* AnimalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTableViewController.swift; sourceTree = "<group>"; };
+		DA538AD72600387F00833646 /* BasicPersonDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPersonDataViewController.swift; sourceTree = "<group>"; };
+		DAB9AB8426004D20004FE379 /* KeyboardGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,8 @@
 		DA1CFDC725F78B5400D2E426 /* CalmVet */ = {
 			isa = PBXGroup;
 			children = (
+				DAB9AB8326004CF6004FE379 /* Gestures */,
+				DA538ACA25FF387B00833646 /* App */,
 				DA538ABE25FF1B3300833646 /* Access */,
 				DA1CFDC825F78B5400D2E426 /* AppDelegate.swift */,
 				DA1CFDCA25F78B5400D2E426 /* SceneDelegate.swift */,
@@ -101,8 +109,25 @@
 			children = (
 				DA538ABB25FF1B2900833646 /* SignupViewController.swift */,
 				DA538AC625FF1D6000833646 /* LoginViewController.swift */,
+				DA538AD72600387F00833646 /* BasicPersonDataViewController.swift */,
 			);
 			path = Access;
+			sourceTree = "<group>";
+		};
+		DA538ACA25FF387B00833646 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DA538ACC25FF389D00833646 /* AnimalsTableViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DAB9AB8326004CF6004FE379 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				DAB9AB8426004D20004FE379 /* KeyboardGestureRecognizer.swift */,
+			);
+			path = Gestures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +246,9 @@
 			files = (
 				DA1CFDD325F78B5400D2E426 /* CalmVet.xcdatamodeld in Sources */,
 				DA538ABC25FF1B2900833646 /* SignupViewController.swift in Sources */,
+				DAB9AB8526004D20004FE379 /* KeyboardGestureRecognizer.swift in Sources */,
+				DA538ACD25FF389D00833646 /* AnimalsTableViewController.swift in Sources */,
+				DA538AD82600387F00833646 /* BasicPersonDataViewController.swift in Sources */,
 				DA1CFDC925F78B5400D2E426 /* AppDelegate.swift in Sources */,
 				DA538AC725FF1D6000833646 /* LoginViewController.swift in Sources */,
 				DA1CFDCB25F78B5400D2E426 /* SceneDelegate.swift in Sources */,
@@ -373,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FG8SD99LV;
 				INFOPLIST_FILE = CalmVet/Info.plist;
@@ -382,6 +411,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.soyaaroncervantes.CalmVet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -393,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FG8SD99LV;
 				INFOPLIST_FILE = CalmVet/Info.plist;
@@ -402,6 +433,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.soyaaroncervantes.CalmVet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
